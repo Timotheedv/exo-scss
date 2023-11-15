@@ -1,0 +1,21 @@
+//image
+@mixin social-links {
+     display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: flex-end;
+     a{
+     width: 31.52px;
+     height: 31.51px;
+     }
+}
+
+@mixin h2{
+    font-size: 52px;
+    color: $clr-vrt;
+    font-family: $ff-poppins;
+}
+
+@mixin button{
+    border-radius: 8px;
+}
