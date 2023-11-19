@@ -1,0 +1,38 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+
+
+
+
+@media screen and (width: 1205px) {
+//menu
+    .h1-class {
+        h1{
+        margin-left: 0%;
+        }
+       
+  }
+//ingredients
+
+}
+  
+  /* Large screens (1025px to 1366px) */
+  @media screen and (min-width: 1025px) and (max-width: 1366px) {
+    /* Add styles for screens between 1025px and 1366px if necessary */
+  }
+  
+  /* Medium screens (769px to 1024px) */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Add styles for screens between 769px and 1024px if necessary */
+  }
+  
+  /* Small screens (up to 768px) */
+  @media screen and (max-width: 768px) {
+    /* Add styles for screens up to 768px if necessary */
+  }
+
+
+
+  
+

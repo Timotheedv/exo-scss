@@ -14,8 +14,8 @@
     background-size: cover; 
 
     .img-partager{
-        width:  525px;
-        height: 525px;
+        width:  500px;
+        height: 500px;
     }
 
     .forms{
@@ -23,6 +23,7 @@
         flex-direction: column;
         justify-content: space-between;
         max-width: 600px;
+        padding: 2%;
         
         .envie-partager{
             display: flex;
