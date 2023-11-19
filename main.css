@@ -4,6 +4,29 @@
   box-sizing: border-box;
 }
 
+/*
+%social-links {
+    display: flex;
+        gap: 20px;
+        align-items: flex-end;
+        margin-left: 85%;
+        margin-top: 28%;
+     a{
+     width: 31.52px;
+     height: 31.51px;
+     }
+}
+
+@mixin h2{
+    font-size: 52px;
+    color: $clr-vrt;
+    font-family: $ff-poppins;
+}
+
+@mixin button($radius){
+    border-radius: $radius;
+
+}*/
 .menu {
   width: 100%;
   display: flex;
@@ -12,10 +35,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 60px 40px;
+  padding: 50px 40px;
   width: 100%;
-  height: 70px;
-  background-color: rgba(0, 0, 0, 0.5);
+  height: 60px;
+}
+
+.header-contain {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+}
+.header-contain .tag-lines {
+  color: red;
 }
 
 .menu-items {
@@ -44,10 +77,11 @@
 .menu-items li button {
   width: 160px;
   height: 39px;
+  border-style: none;
+  border-radius: 5px;
   font-weight: 600;
   color: #B2D234;
   cursor: pointer;
-  border-radius: 8px;
 }
 .menu-items li button p {
   font-size: 15px;
@@ -63,19 +97,16 @@
   background-image: overlay;
   background-color: #60A0D8;
 }
-.menu-items .tag-lines h1 {
-  font-size: 126px;
+
+.h1-class {
+  font-size: 52px;
   margin-left: 40%;
-}
-.menu-items .social-links {
-  display: flex;
-  gap: 20px;
+  color: #ffffff;
   align-items: center;
-  justify-content: flex-end;
+  font-family: "Poppins", sans-serif;
 }
-.menu-items .social-links a {
-  width: 31.52px;
-  height: 31.51px;
+.h1-class h2 {
+  font-size: 42px;
 }
 
 header {
@@ -84,6 +115,349 @@ header {
   background: url("images/Header back.png");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, rgba(96, 160, 216, 0.62), rgba(179, 210, 52, 0.62));
+  position: absolute;
+  z-index: 0;
+}
+
+.welcome {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  background-image: url("images/bg-surmesure.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.welcome .txt-welcome {
+  width: 62.7%;
+  height: 475px;
+  padding: 10%;
+}
+.welcome .txt-welcome .surmesure {
+  color: #B2D234;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+}
+.welcome .txt-welcome .paragraphe {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.welcome .txt-welcome .ensavoirplus button {
+  border-style: none;
+  width: 257px;
+  height: 61px;
+  background-color: #B2D234;
+  color: #ffffff;
+  margin-left: 40%;
+  border-radius: 5px;
+}
+.welcome .txt-welcome .ensavoirplus button p {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.surplace {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  background-image: url("images/surplace.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.surplace .card {
+  position: relative;
+  left: 50%;
+  top: 10%;
+  width: 40%;
+  height: 80%;
+  background-color: rgba(178, 210, 52, 0.5);
+}
+
+.carte {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  background-image: url("images/carte.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.carte .presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+.carte .presentation h1 {
+  font-size: 52px;
+  font-family: "Poppins", sans-serif;
+  color: #B2D234;
+}
+.carte .presentation p {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+.carte .menu-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  background-image: url("images/carte.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.carte .choix-menu {
+  width: 524px;
+  height: 600px;
+  padding: 5%;
+}
+.carte .choix-menu .choix {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 98px;
+}
+.carte .choix-menu .choix .name-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.carte .choix-menu .choix .name-price .name {
+  color: #B2D234;
+  font-size: 15px;
+  font-weight: 700;
+  font-style: "Poppins", sans-serif;
+}
+.carte .choix-menu .choix .name-price .price {
+  color: #B2D234;
+  font-size: 15px;
+  font-weight: 700;
+  font-style: "Poppins", sans-serif;
+}
+.carte .choix-menu .choix .composition {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+.carte .choix-menu .choix .composition p {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+.carte .commande {
+  width: 524px;
+  height: 490px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.carte .commande .force {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.carte .commande .force .force-bleu {
+  font-size: 52px;
+  font-weight: 700;
+  color: #60A0D8;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+}
+.carte .commande .force .force-verte {
+  font-size: 52px;
+  font-weight: 700;
+  color: #B2D234;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+}
+.carte .commande .text-cmd {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+.carte .commande .btn-commander button {
+  color: #ffffff;
+  background-color: #B2D234;
+  width: 357px;
+  height: 61px;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  border-style: none;
+}
+.carte .commande .btn-commander button:hover {
+  background-color: #60A0D8;
+  cursor: pointer;
+}
+
+.ingredients {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  background-image: url("images/ingredients.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 8%;
+}
+.ingredients .ing-vert {
+  width: 632px;
+  height: 410px;
+  background-color: #B2D234;
+}
+.ingredients .ing-vert .h2-ing-vert {
+  font-size: 52px;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  margin-left: 5%;
+  font-weight: 600;
+}
+.ingredients .ing-vert .ing-vert-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+.ingredients .ing-vert .ing-vert-flex .aliments-vert1 {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #ffffff;
+}
+.ingredients .ing-vert .ing-vert-flex .aliments-vert2 {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #ffffff;
+}
+.ingredients .ing-bleu {
+  width: 632px;
+  height: 410px;
+  background-color: #60A0D8;
+}
+.ingredients .ing-bleu .h2-ing-bleu {
+  font-size: 52px;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  margin-left: 5%;
+  font-weight: 600;
+}
+.ingredients .ing-bleu .ing-bleu-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+.ingredients .ing-bleu .ing-bleu-flex .aliments-bleu1 {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #ffffff;
+}
+.ingredients .ing-bleu .ing-bleu-flex .aliments-bleu2 {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.partager {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  background-image: url("images/bg-surmesure.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.partager .img-partager {
+  width: 525px;
+  height: 525px;
+}
+.partager .forms {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 600px;
+}
+.partager .forms .envie-partager {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 5%;
+}
+.partager .forms .envie-partager-h2 {
+  font-size: 15px;
+  font-size: 26px;
+  color: #B2D234;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 5%;
+}
+.partager .forms .envie-partager-txt {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  padding-bottom: 5%;
+}
+.partager .forms-group {
+  margin-bottom: 40px;
+}
+.partager .forms-group input,
+.partager .forms-group textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.partager .forms .btn-postuler {
+  width: 100%;
+}
+.partager .forms .btn-postuler button {
+  width: 257px;
+  height: 61px;
+  background-color: #B2D234;
+  color: #ffffff;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin-left: 30%;
+  cursor: pointer;
+}
+.partager .forms .btn-postuler button:hover {
+  background-color: #60A0D8;
 }
 
 /*# sourceMappingURL=main.css.map */

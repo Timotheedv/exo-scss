@@ -1,9 +1,10 @@
-//image
-@mixin social-links {
-     display: flex;
+/*
+%social-links {
+    display: flex;
         gap: 20px;
-        align-items: center;
-        justify-content: flex-end;
+        align-items: flex-end;
+        margin-left: 85%;
+        margin-top: 28%;
      a{
      width: 31.52px;
      height: 31.51px;
@@ -16,6 +17,7 @@
     font-family: $ff-poppins;
 }
 
-@mixin button{
-    border-radius: 8px;
-}
+@mixin button($radius){
+    border-radius: $radius;
+    
+}*/

@@ -9,16 +9,28 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 60px 40px;
+        padding: 50px 40px;
         width: 100%;
-        height: 70px;
-        background-color: $clr-trspr;
+        height: 60px;
+        
         }
 }
 
+.header-contain {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+
+    .tag-lines {
+        color: red;
+    }
+}
 
 
-.menu-items{    
+.menu-items{  
+     
 
     ul {
         display: flex;
@@ -50,10 +62,11 @@
         button{
             width: 160px;
             height: 39px;
+            border-style: none;
+            border-radius: $btn-radius;
             font-weight: $fw-smbld;
             color: $clr-vrt;
             cursor: pointer;
-            @include button;
 
             p{
                 font-size: $fs-commander;
@@ -79,14 +92,20 @@
         }
 }
 
-.tag-lines{
-   
-   h1 {
-    font-size: 126px;
-    margin-left: 40%;
-   }
+
+
 }
 
-.social-links{
-    @include social-links;
-}}
+.h1-class  {
+    font-size: 52px;
+    margin-left: 40%;
+    color: $clr-blc;
+    align-items: center;
+    font-family: $ff-poppins;
+h2{
+    font-size: 42px;
+}
+    
+   }
+
+   

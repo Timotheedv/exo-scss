@@ -1,0 +1,92 @@
+@use '../abstracts/variables' as *;
+
+
+.partager{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    background-image: url('images/bg-surmesure.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+    .img-partager{
+        width:  525px;
+        height: 525px;
+    }
+
+    .forms{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 600px;
+        
+        .envie-partager{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-bottom: 5%;
+           
+           &-h2{
+            font-size: $fs-commander;
+            font-size: 26px;
+            color: $clr-vrt;
+            font-family: $ff-poppins;
+            padding-bottom: 5%;
+           }
+
+           &-txt{
+            font-size: $fs-items;
+            font-family: $ff-poppins;
+            font-weight: $fw-light;
+            padding-bottom: 5%;
+           }
+
+           
+
+            
+        }
+
+        
+
+        
+        &-group {
+            margin-bottom: 40px;
+            
+            input,
+            textarea {
+                width: 100%;
+                padding: 8px;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+    }
+
+    .btn-postuler{
+    width: 100%;
+        button{
+
+        width: 257px;
+        height: 61px;
+        background-color: $clr-vrt;
+        color: $clr-blc;
+        border-style: none;
+        border-radius: 5px;
+        font-size: 24px;
+        font-weight: $fw-smbld;
+        font-family: $ff-poppins;
+        margin-left: 30%;
+        cursor: pointer;
+
+        &:hover{
+            background-color: $clr-bleu;
+        }
+    }}
+        
+    }
+}
+    

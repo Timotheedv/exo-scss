@@ -1,0 +1,60 @@
+@use '../abstracts/variables' as *;
+
+.welcome {
+    width: 100%;
+    height: 100vh;
+
+    background-color: rgb(255, 255, 255);
+    background-image: url('images/bg-surmesure.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+
+    .txt-welcome{
+    width: 62.7%;
+    height: 475px;
+    padding: 10%;
+    
+    .surmesure{
+                // font-size: $fs-h2;
+                color: $clr-vrt;
+                font-family: $ff-poppins;
+                font-size: 24px;
+            }
+
+
+    .paragraphe{
+        font-size: $fs-items;
+        font-weight: $fw-regular;
+        font-family: $ff-poppins;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .ensavoirplus{
+
+        button{
+            border-style: none;
+            width: 257px;
+            height: 61px;
+            background-color: $clr-vrt;
+            color: $clr-blc;
+            margin-left:  40%;
+            border-radius: 5px;
+
+            p{
+                font-size: 24px;
+                font-weight: $fw-smbld;
+                font-family: $ff-poppins;
+            }
+            
+        }
+    
+    }
+
+    
+}
+
+
+}
+
